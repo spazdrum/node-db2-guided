@@ -1,5 +1,8 @@
 const express = require('express');
 
+// compare this to the original code in the guided repo ...
+// this is the "best practice" way to do it... keep your db config out
+// of your express router code.
 const db = require('../data/db-config.js');
 
 

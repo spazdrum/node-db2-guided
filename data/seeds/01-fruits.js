@@ -1,6 +1,10 @@
+// be sure to modify knexfile.js to tell knex where seed files are stored.
+// create a seed file: knex seed:make <filename>
+
 
 exports.seed = function(knex) {
-  // Deletes ALL existing entries
+  // Deletes ALL existing entries, *and* resets the ID (because we are
+  // using ".truncate()", not ".del()")
   return knex('fruits').truncate()
     .then(function () {
       // Inserts seed entries
