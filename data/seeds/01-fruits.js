@@ -1,3 +1,6 @@
+// npx knex seed:make 'name' -- creates seeds -- runs in alphabetical order ('01, 02, 03, etc')
+// npx knex seed:run -- pushes seed information
+
 exports.seed = function (knex) {
   // Deletes ALL existing entries
   return knex("fruits")
